@@ -22,6 +22,9 @@ body {
     .container {
         max-width: 768px;
     }
+    .our-strategy {
+        display: block;    
+    }
 }
 
 @media screen and (min-width: 1158px) {
@@ -29,6 +32,10 @@ body {
         max-width: 1158px;
         padding: 0 15px;
     }
+    .our-strategy {
+        display: block;    
+    }
+        
 }
 
 .cont-header {
@@ -166,6 +173,7 @@ ul {
 		background-image: linear-gradient(to right, rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)),
 			url(../images/hero-mob-2x.jpeg);
 	}
+}
 
 .my-link:hover {
     color: #404bbf; 
@@ -226,6 +234,7 @@ ul {
 
 .section-two {
     padding: 96px 0;
+
 }
 
 h2 {
@@ -252,12 +261,10 @@ h2 {
 
 .section-two-item {
     display: flex;
-    gap: 24px;    
+    flex-direction: column;
+    gap: 72px;    
 }
-.two-item-problem {
-    width: calc((100% - 72px) / 4);
-    margin-right: 0;
-}
+
 
 .our-strategy {
     display: none;
@@ -272,31 +279,24 @@ h2 {
 
 }
 
-h3 {
+.title-two {
     color: #2E2F42;
-    font-family: Roboto;
-    font-size: 20px;
-    font-style: normal;
-    font-weight: 500;
+    font-size: 36px;
+    line-height: 1.11;
     letter-spacing: 0.02em;
+    /* margin-bottom: 8px; */
+    text-align: center;
 }
 
-p {
+.my-item {
     color: #434455;
     font-family: Roboto;
     font-size: 16px;
     font-style: normal;
     font-weight: 400;
     letter-spacing: 0.02em;
-    margin: 0;   
-}
-
-.title-two {
-    margin-bottom: 8px;
-}
-
-.my-item {
-    line-height: 1.5;  
+    margin: 0;  
+    line-height: 1.5; 
 }
 
 .section-three {
