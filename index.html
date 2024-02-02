@@ -17,6 +17,7 @@
 <body>
   <header class="my-header">   
     <div class="container cont-header"> 
+
       <nav class="header-nav">
         <a href="./index.html" class="header-logo">Web<span class="header-logo-span">Studio</span></a>             
         <ul class="menu">
@@ -29,23 +30,45 @@
               <li class="my-menu">
                 <a href="" class="my-class-link">Contacts</a>
               </li>
-        </ul>
-      </nav> 
-      <address class="addresses">
-            <ul class="my-list">
+        
               <li>
-                <a href="mailto:info@devstudio.com" class="my-link">info@devstudio.com</a>
+                <address class="addresses">
+                  <ul class="my-list">
+                    <li>
+                      <a href="mailto:info@devstudio.com" class="my-link">info@devstudio.com</a>
+                    </li>
+                    <li>
+                      <a href="tel:+110001111111" class="my-link">+1(100)0111-11-11</a>
+                    </li>
+                  
+                    <li>
+                    
+      
+                    </li>
+                  </ul>
+
+                </ul>
+              </nav>  
+                  
+            </address>
+            <button type="button" class="my-burger">
+              <svg class="my-burger-link" width="24" height="24">
+                <use href="./images/icons.svg#icon-group"></use>
+              </svg>
+            </button>
+
+
               </li>
-              <li>
-                <a href="tel:+110001111111" class="my-link">+1(100)0111-11-11</a>
-              </li>
-            </ul>
-      </address>
+
+    
+      
+
+
     </div>          
   </header>
    <main class="my-main">
         <section class="section-one">
-          <!--  title-container -->
+
            <div class="container title-container">
                 <h1 class="my-title">Effective Solutions
                 for Your Business
@@ -63,11 +86,6 @@
                           <use href="./images/icons.svg#icon-antenna"></use>
                         </svg>
                       </div>
-
-                      
-
-
-
 
                       <h3 class="title-two">Strategy</h3>
                       <p class="my-item">Our goal is to identify the business
@@ -105,10 +123,10 @@
                 </ul>
             </div>
         </section>
-        <section class="section-three">
+        <!-- <section class="section-three">
           <div class="container three-cont">
             <h2 class="section-three-item">Our Team</h2>           
-            <!-- <div class="cont-hero-three"> -->
+  
               <ul class="my-section-three">
                 <li class="my-hero">
                   <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" height="260"/>
@@ -266,14 +284,14 @@
                             </div>  
                 </li>
               </ul>
-            <!-- </div>                             -->
+
 
           </div> 
-        </section>
-        <section class="section-four">
+        </section> -->
+        <!-- <section class="section-four">
           <div class="container four-cont">
             <h2 class="title-four">Our Portfolio</h2>
-            <!-- <div class="cont-port"> -->
+
               <ul class="my-section-four">
                 <li class="my-port">
                   <div class="my-pictures">
@@ -343,12 +361,12 @@
                 </li>              
               </ul>
           </div>
-        </section>
+        </section> -->
    </main>
-   <footer class="my-footer">
+   <!-- <footer class="my-footer">
     <div class="container my-foot">
       <div class="footer-item-cont">
-        <!-- class="container cont-header" -->
+
         <a href="./index.html" class="footer-logo header-link-footer">Web<span class="heater-logo-span-foot">Studio</span></a>             
         <p class="footer-item">Increase the flow of customers and sales for your business with digital marketing & growth solutions.</p>  
       </div>
@@ -386,6 +404,75 @@
         </ul>
       </div>
     </div>   
-  </footer>
+  </footer> -->
+
+  <!-- <div class="backdrop is-open">
+    <div class="modal">
+      <button type="button" class="modal-close-btn">
+        <svg class="close-black" width="8" height="8">
+          <use href="./images/icons.svg#icon-close-black" class="my-person"></use>
+        </svg>  
+      </button>
+      <p class="modal-paragr">Leave your contacts and we will call you back</p>
+      <form class="">
+
+        <div class="modal-form">
+          <label for="user-name" class="modal-label">Name</label>
+          <div class="modal-input">
+            <input type="text" name="user-name" class="input-modal" id="user-name" />
+            <svg class="person-black" width="18" height="24">
+              <use href="./images/icons.svg#icon-person-black" class="my-person"></use>
+            </svg>  
+          </div>
+        </div>
+
+        <div class="modal-form">
+          <label class="modal-label">Phone</label>
+          <div class="modal-input">
+            <input type="text" name="user-phone" class="input-modal" id="user-phone" />
+            <svg class="person-black" width="18" height="24">
+              <use href="./images/icons.svg#icon-phone-black" class="my-person"></use>
+            </svg>  
+          </div>
+        </div>
+
+        <div class="modal-form">
+          <label class="modal-label">Email</label>
+          <div class="modal-input">
+            <input type="text" name="user-email" class="input-modal" id="user-email" />
+            <svg class="person-black" width="18" height="24">
+              <use href="./images/icons.svg#icon-email-black" class="my-person"></use>
+            </svg>  
+          </div>
+        </div>
+        <div class="modal-area">
+          <label for="user-comment" class="modal-label">Comment</label>
+          <textarea class="my-textarea" name="user-comment" id="user-comment" placeholder="Text input" cols="30" rows="10"></textarea>
+
+        </div>
+
+        <div class="my-chack">
+          <input id="user-privacy" type="checkbox" 
+          value="true" name="user-privacy" 
+          class="visually-hidden modal-check">
+          <label for="user-privacy" class="chack-label">
+            <span class="modal-span">
+            
+            <svg class="check-vector-one" width="10" height="8">
+              <use href="./images/icons.svg#icon-vector-one" class="my-vector-one"></use>
+            </svg>  
+              
+          </span>
+          I accept the terms and conditions of the
+          <a href="./index.html" class="modal-privacy">Privacy Policy</a>             
+        </label>
+        </div>
+        <button class="modal-button">Send</button>
+
+      </form> 
+    </div>
+  </div> -->
+
+
 </body>
 </html>
