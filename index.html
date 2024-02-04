@@ -29,8 +29,7 @@
               </li>
               <li class="my-menu">
                 <a href="" class="my-class-link">Contacts</a>
-              </li>
-        
+              </li>       
               <li>
                 <address class="addresses">
                   <ul class="my-list">
@@ -39,14 +38,10 @@
                     </li>
                     <li>
                       <a href="tel:+110001111111" class="my-link">+1(100)0111-11-11</a>
-                    </li>
-                  
-                    <li>
-                    
-      
+                    </li>                 
+                    <li>      
                     </li>
                   </ul>
-
                 </ul>
               </nav>  
                   
@@ -56,15 +51,55 @@
                 <use href="./images/icons.svg#icon-group"></use>
               </svg>
             </button>
-
-
-              </li>
-
+            
     
-      
-
-
-    </div>          
+          </div> 
+          <div class="mobile-menu">
+            <button class="mob-cloese-btn">
+              <svg width="8" height="8">
+                <use href="./images/icons.svg#icon-close-black"></use>
+              </svg>
+            </button>
+            <ul class="mob-nav-list">
+              <li><a href="" class="mob-nav-link active">Studio</a></li>
+              <li><a href="" class="mob-nav-link">Portfolio</a></li>
+              <li><a href="" class="mob-nav-link">Contacts</a></li>
+            </ul>
+            <ul class="mob-cont-list">
+              <li><a href="tel:+110001111111" class="mob-cont-link mob-active">+11 (000) 111-11-11</a></li>
+              <li><a href="mailto:info@devstudio.com" class="mob-cont-link">info@devstudio.com</a></li>
+            </ul>
+            <ul class="mob-soc-list">
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-instagram"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li class="mob-soc-item">
+                <a href="" class="mob-soc-link">
+                  <svg class="mob-soc-icon" width="24" height="24">
+                    <use href="./images/icons.svg#icon-linkedin"></use>
+                  </svg>
+                </a>
+              </li>
+            </ul>
+          </div>         
   </header>
    <main class="my-main">
         <section class="section-one">
@@ -123,13 +158,15 @@
                 </ul>
             </div>
         </section>
-        <!-- <section class="section-three">
+        <section class="section-three">
           <div class="container three-cont">
             <h2 class="section-three-item">Our Team</h2>           
   
               <ul class="my-section-three">
                 <li class="my-hero">
-                  <img src="./images/mark.jpg" alt="Mark Guerrero" width="264" height="260"/>
+
+                  <img srcset="./images/mark.jpg 1x, ./images/mark-2x.jpeg 2x"
+                  src="./images/mark.jpg" alt="Mark Guerrero" width="264" height="260"/>
                   <div class="cont-hero-three">
                       <h3 class="section-three-name">Mark Guerrero</h3>
                       <p class="three-section-item">Product Designer</p>
@@ -167,7 +204,9 @@
                   </div>
                 </li>
                 <li class="my-hero">
-                            <img src="./images/tom.jpg" alt="Tom Ford" width="264" height="260"/>
+                            <img
+                            srcset="./images/tom.jpg 1x, ./images/tom-2x.jpeg 2x"
+                            src="./images/tom.jpg" alt="Tom Ford" width="264" height="260"/>
                             <div class="cont-hero-three">
                                 <h3 class="section-three-name">Tom Ford</h3>
                                 <p class="three-section-item">Frontend Developer</p>
@@ -206,7 +245,9 @@
                             </div>  
                 </li>
                 <li class="my-hero">
-                            <img src="./images/camila.jpg" alt="Camila Garcia" width="264" height="260"/>
+                            <img
+                            srcset="./images/camila.jpg 1x, ./images/camila-2x.jpeg 2x"
+                            src="./images/camila.jpg" alt="Camila Garcia" width="264" height="260"/>
                             <div class="cont-hero-three">
                                 <h3 class="section-three-name">Camila Garcia</h3>
                                 <p class="three-section-item">Marketing</p>
@@ -245,7 +286,9 @@
                             </div>  
                 </li>
                 <li class="my-hero">
-                            <img src="./images/daniel.jpg" alt="Daniel Wilson" width="264" height="260"/>
+                            <img
+                            srcset="./images/daniel.jpg 1x, ./images/daniel-2x.jpeg 2x"
+                            src="./images/daniel.jpg" alt="Daniel Wilson" width="264" height="260"/>
                             <div class="cont-hero-three">
                                 <h3 class="section-three-name">Daniel Wilson</h3>
                                 <p class="three-section-item">UI Designer</p>
@@ -287,15 +330,22 @@
 
 
           </div> 
-        </section> -->
-        <!-- <section class="section-four">
+        </section>
+        <section class="section-four">
           <div class="container four-cont">
             <h2 class="title-four">Our Portfolio</h2>
 
               <ul class="my-section-four">
                 <li class="my-port">
                   <div class="my-pictures">
-                    <img src="./images/project-card-one.jpg" alt="Banking App" width="360" height="300">
+                    
+                    
+                    <img 
+                    
+                    
+                    
+                    src="./images/project-card-one.jpg" alt="Banking App" width="360" height="300">
+                    
                     <p class="my-paragr">14 Stylish and User-Friendly App Design Concepts · Task Manager App · Calorie Tracker App · Exotic Fruit Ecommerce App · Cloud Storage App
                     </p>                     
                   </div>
@@ -361,9 +411,9 @@
                 </li>              
               </ul>
           </div>
-        </section> -->
+        </section>
    </main>
-   <!-- <footer class="my-footer">
+   <footer class="my-footer">
     <div class="container my-foot">
       <div class="footer-item-cont">
 
@@ -403,10 +453,33 @@
           </li>
         </ul>
       </div>
-    </div>   
-  </footer> -->
+      <div class="subscribe">
+        <p class="my-subscribe">Subscribe</p>
+        <form class="subscribe-footer">
+          <label class="subscribe-label">
+            <input class="subscribe-life" type="email" name="my-email" placeholder="E-mail">
+  
+          </label>
+          
+        </form>
+        
+      </div>
+      <button type="submit" class="submit-btn">Subscribe
+        <svg class="teleg" width="24" height="24">
+          <use href="./images/icons.svg#icon-frame" class="my-teleg"></use>
+        </svg>
+      </button>
 
-  <!-- <div class="backdrop is-open">
+
+    </div> 
+
+    
+    
+  </div> 
+
+  </footer> 
+
+  <div class="backdrop is-open">
     <div class="modal">
       <button type="button" class="modal-close-btn">
         <svg class="close-black" width="8" height="8">
@@ -414,7 +487,7 @@
         </svg>  
       </button>
       <p class="modal-paragr">Leave your contacts and we will call you back</p>
-      <form class="">
+      <form class="my-form">
 
         <div class="modal-form">
           <label for="user-name" class="modal-label">Name</label>
@@ -471,8 +544,19 @@
 
       </form> 
     </div>
-  </div> -->
+  </div>
 
 
 </body>
 </html>
+
+
+
+ 
+ 
+ 
+ 
+ 
+ 
+ 
+
