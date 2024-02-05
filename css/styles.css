@@ -46,7 +46,7 @@ body {
     line-height: 1.17; 
     letter-spacing: 0.03em;
     text-transform: uppercase;
-    padding: 17px 0;
+    gap: 24px;
 }
 
 .my-class-link {
@@ -339,7 +339,7 @@ h2 {
 
 .section-two-item {
     display: flex;
-    /* flex-direction: column; */
+    flex-direction: column;
     gap: 72px;    
 }
 
@@ -347,7 +347,7 @@ h2 {
 .our-strategy {
     display: none;
     align-items: center; 
-    /* justify-content: center; */
+    justify-content: center;
     height: 112px; 
     background-color: #f4f4fd; 
     border-radius: 4px; 
@@ -379,7 +379,7 @@ h2 {
 }
 
 .three-cont {
-    /* flex-direction: column; */
+    width: 296px;
 }
 
 .section-three-item {
@@ -396,9 +396,9 @@ h2 {
 
 .my-section-three {
     gap: 72px; 
-    /* display: flex;  */
-    /* flex-direction: column; */
     align-items: center;
+    margin: 0;
+
 }
 
 .my-hero {
@@ -481,7 +481,7 @@ p {
 }
 
 .section-four {
-    padding-top: 96px 0; 
+    padding: 96px 0; 
 }
 
 .title-four {
@@ -572,6 +572,12 @@ p {
     gap: 72px; 
 }
 
+.footer-item-cont {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
 .footer-item {
     line-height: 1.5;
     color: #F4F4FD;
@@ -656,7 +662,7 @@ img {
 
 }
 .subscribe-footer {
-  
+    display: flex;
     flex-direction: column;
     align-items: center;
     gap: 24px;
@@ -915,16 +921,16 @@ img {
     border: none;
 }
 
-/* @media screen and (min-width: 768px) {
-    display: flex;
-    gap: 40px;
-} */
 
 @media screen and (min-width: 768px) {
     .container {
         max-width: 768px;
-        gap: 40px;
+        
     }
+    .section-one {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-lap-1x.jpeg), url(../images/hero-lap-1x.jpeg); 
+    }
+
     .menu {
 
         display: flex;
@@ -945,6 +951,7 @@ img {
     .header-nav {
         height: 72px;
         display: flex;
+        gap: 24px;
     }
 
     .my-burger {
@@ -986,7 +993,7 @@ img {
     }
 
     .my-foot {
-        width: 584px;
+        max-width: 584px;
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
@@ -1008,8 +1015,9 @@ img {
 @media screen and (min-width: 1158px) {
     .container {
         max-width: 1158px;
-        padding: 0 15px;
+        padding: 0 15px;        
     }
+
     .our-strategy {
         display: flex;    
     }
@@ -1045,55 +1053,118 @@ img {
         display: none;       
     }
 
+    .section-one-one {
+        background-image: linear-gradient(rgba(46, 47, 66, 0.7), rgba(46, 47, 66, 0.7)), url(../images/hero-mob-1x.jpeg), url(../images/hero-desk-2x.jpeg); 
+        padding: 112px;
+    }
+
+    .my-title {
+        max-width: 496px;
+        font-size: 56px;
+        margin-bottom: 48px;        
+        font-weight: 700;
+        font-size: 56px;
+        line-height: 1.07143;
+    }
+
     .section-two-item {
         display: flex;
         flex-direction: row;
-        /* flex-wrap: wrap; */
+        flex-wrap: nowrap;
         gap: 72px 24px;    
     }
 
+    .title-two {
+        text-align: left;
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+        letter-spacing: 0.02em;
+        color: #2e2f42;
+    }
+
     .two-item-problem {
-        width: calc((100% - 24px)/5);
+        width: calc((100% - 72px)/4);
         gap: 40px;
         /* height: 224px; */
     }
 
+    .my-item {
+        font-weight: 400;
+    }
+
+    .three-cont {
+        width: 1100px;
+    }
+
     .my-section-three {
         display: flex;
-        
         flex-direction: row;
-
-  
+        flex-wrap: nowrap;
+        gap: 72px 24px;  
     }
 
     .my-hero {
-        width: calc((100% - 24px)/5); 
+        width: calc((100% - 72px)/4); 
         align-items: center;      
     }
 
     .my-section-four {
         display: flex;
         flex-wrap: wrap;
-        gap: 48px;
+        gap: 48px 24px;
         flex-direction: row;
     }
 
     .my-port {
-        width: calc((100% - 24px)/4);        
+        width: calc((100% - 48px)/3);        
     }
 
     .my-foot {
-        /* width: 584px; */
+        max-width: 1158px;
         display: flex;
-        /* flex-direction: row; */
-        /* flex-wrap: wrap; */
-        gap: 72px 24px;   
+        gap: 72px 24px; 
+        flex-wrap: nowrap;
+        
+
+        flex-direction: row;
+
     }
 
-   
+    .footer-logo {
+        text-align: left;        
+    }
+
+    .header-link-footer {
+        text-align: left;
+    }
+
+
+.subscribe-footer {
+    display: flex;
+    flex-direction: row;   
+    gap: 24px;
+    width: 453px;
+    height: 80px;
 }
+  
+    .footer-item-cont {
+        flex-wrap: nowrap;
+        margin-right: 80px;
+    }
 
+    .footer-desk {
+        margin-right: 120px;        
+    }
 
+    .footer-social-media {
+        text-align: left;
+    }
+
+    .my-subscribe {
+        text-align: left;        
+    }
+}
 
 
 
